@@ -32,6 +32,8 @@ if sys.version_info[:3] < (3, 4, 0):
 
 data_files = []
 
+sys.path.insert(1,os.path.join('/usr/local/lib/','python'+sys.version[:3],'site-packages/'))
+
 if platform.system() in ['Linux', 'FreeBSD', 'DragonFly']:
     parser = argparse.ArgumentParser()
     parser.add_argument('--root=', dest='root_path', metavar='dir', default='/')

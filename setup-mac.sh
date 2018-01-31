@@ -12,4 +12,5 @@ sudo chown -R "$USER":admin /Library/Caches/Homebrew
 curl https://bootstrap.pypa.io/ez_setup.py -o - | python3
 
 # Setup
+unset PYTHONPATH  #to switch python
 python3 setup.py install
